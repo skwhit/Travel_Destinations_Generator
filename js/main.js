@@ -5,6 +5,8 @@ const locationsArr = destinationsArr;
 const location = document.querySelector('.location')
 let randomNum;
 let item;
+let opacity;
+let inervalID;
 
 const generateDestination = document.querySelector('.generateDestination');
 generateDestination.addEventListener("click", ()=>{
@@ -16,4 +18,6 @@ generateDestination.addEventListener("click", ()=>{
     `.destinationContainer::before {background-image: url(${item.image})}`
     location.innerHTML = `${item.location}, ${item.state} <br><br>
     Scroll down to book a flight and hotel for this destination`;
+
+
 })
