@@ -5,8 +5,8 @@ const locationsArr = destinationsArr;
 const location = document.querySelector('.location')
 let randomNum;
 let item;
-let opacity;
-let inervalID;
+// let opacity;
+// let inervalID;
 
 const generateDestination = document.querySelector('.generateDestination');
 generateDestination.addEventListener("click", ()=>{
