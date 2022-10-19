@@ -120,7 +120,7 @@ const washingtonDC = new Destination(
 const barHarbor = new Destination(
   "Bar Harbor",
   "ME",
-  "./img/barharbor.jpg",
+  "./img/barHarbor.jpg",
   "https://images.unsplash.com/photo-1539848266534-d3db2060e877?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91284.3971421837!2d-68.34033107887866!3d44.35849928828038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4caebe4815802593%3A0x88e91a6528cad91b!2sBar%20Harbor%2C%20ME!5e0!3m2!1sen!2sus!4v1666043933289!5m2!1sen!2sus",
 
