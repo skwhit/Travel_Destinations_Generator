@@ -227,14 +227,7 @@ const lasVegas = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206252.72147271104!2d-115.31508339643749!3d36.125195780533076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas%20Vegas%2C%20NV!5e0!3m2!1sen!2sus!4v1666044377431!5m2!1sen!2sus",
 
 );
-const gettysburg = new Destination(
-  "Gettysburg",
-  "Pennsylvania",
-  "./img/gettysburg.jpg",
-  "https://images.unsplash.com/photo-1580742125012-c3f8fc5c2673?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12255.925261754814!2d-77.24088525914277!3d39.82983659947667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c854bb6968cbb9%3A0x76e0a9410973efbe!2sGettysburg%2C%20PA%2017325!5e0!3m2!1sen!2sus!4v1666044405213!5m2!1sen!2sus",
 
-);
 const destin = new Destination(
   "Destin",
   "FL",
@@ -281,7 +274,6 @@ export const destinationsArr = [
   seattle,
   miami,
   lasVegas,
-  gettysburg,
   destin,
   nashville,
 ];
