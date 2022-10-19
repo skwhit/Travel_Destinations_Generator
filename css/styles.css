@@ -1,158 +1,200 @@
-*, *::before,*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    border: none;
-    overflow-x: hidden;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  border: none;
+  overflow-x: hidden;
 }
 
 .destinationContainer::before {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url('../img/travel.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 1;
-    box-shadow: inset 0px 0px 150px black;
-    
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/travel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+  box-shadow: inset 0px 0px 150px black;
 }
 
 .destinationContainer {
-    height: 100vh;
-    position: relative;
-    background-color: black;
-    /* z-index: 0; */
-    box-shadow: inset 0 0 100px black;
-}
-
-.destination {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: .7;
-    
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  /* z-index: 0; */
+  box-shadow: inset 0 0 100px black;
 }
 
 .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-    background-color: rgba(41, 39, 38, 0.6);
-    padding:20px;
-    border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  background-color: rgba(41, 39, 38, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  min-width: 200px;
 }
 
 .generateDestination {
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 1.2rem;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 .generateDestination:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .footer {
-    background-color: black;
-    height: 300px;
+  background-color: black;
+  height: 300px;
 }
 
 .hamburger::before {
-    content: "";
-    opacity: .7;
-    background-color: black;
+  content: "";
+  opacity: 0.7;
+  background-color: black;
 }
 
 .hamburger {
-    position: absolute;
-    display: block;
-    float: right;
-    padding: 1rem;
-    
-    color: white;
-    z-index: 2;
-    
-    
+  display: block;
+  float: right;
+  padding: 0.5rem;
+  position: fixed;
+  color: white;
+  z-index: 2;
 }
 
 .bar {
-    
-    display: block;
-    
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-    z-index: 2;
+  display: block;
+
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  z-index: 2;
 }
 
 .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .nav-list {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    height: 120px;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    background-color: rgba(41, 39, 38, 0.6);
-    max-width: none;
-    width: 20%;
-    text-align: center;
-    transition: 0.3s;
-    border-radius: 0 0 5px 0;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  /* height: 120px; */
+  flex-direction: column;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(41, 39, 38, 0.6);
+  max-width: none;
+  width: 20%;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 0 0 5px 0;
 }
 
 .nav-list li {
-    width: 100%;
-    height: calc(100%/3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  /* height: calc(100% / 3); */
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item {
-    width: 30%;
-    height: 80%;
-    color: white;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+  width: 150px;
+  height: 80%;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-list.active {
-    left: 0;
+  left: 0;
+}
+
+@media (max-width: 600px) {
+  .destinationContainer {
+    height: 50vh;
+  }
+
+  .destinationContainer::before {
+    height: 50vh;
+    background-position: bottom;
+    background-attachment: scroll;
+  }
+  .overlay {
+    font-size: 0.7rem;
+    max-height: 30vh;
+    gap: 10px;
+  }
+
+  .map {
+    height: 25vh;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid white; */
+    width: 100%;
+    border-radius: 0;
+    padding: 0 30px;
+    gap: 20px;
+  }
+
+  .nav-list li {
+    width: 33vw;
+    /* border: 2px solid white; */
+    /* margin: 10px; */
+    height: 100%;
+  }
+  .nav-item {
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .generateDestination {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
 }
