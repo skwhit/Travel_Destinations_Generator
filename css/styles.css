@@ -26,6 +26,21 @@
   background-attachment: fixed;
   opacity: 1;
   box-shadow: inset 0px 0px 150px black;
+  transition: 1s ease-in-out;
+
+}
+
+.fade {
+  opacity: 0;
+}
+
+@keyframes fade {
+  0% {opacity: 0}
+  15% {opacity: 0}
+  30% {opacity: 0}
+  70% {opacity: 0}
+  85% {opacity: 1}
+  100% {opacity: 1}
 }
 
 .destinationContainer {

@@ -30,7 +30,7 @@ generateDestination.addEventListener("click", () => {
   console.log(item);
   document.querySelector(
     "style"
-  ).innerHTML = `.destinationContainer::before {background-image: url(${item.image})}`;
+  ).innerHTML = `.destinationContainer::before {background-image: url(${item.image});}`;
   location.innerHTML = `${item.location}, ${item.state} <br><br>
     Scroll down to book a flight and hotel for this destination`;
 
