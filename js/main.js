@@ -11,7 +11,7 @@ let index = localStorage.getItem("index");
 let counter = 0;
 
 const generateDestination = document.querySelector(".generateDestination");
-generateDestination.addEventListener("click", getLocation);
+generateDestination.addEventListener("dblclick", getLocation);
 
 if (index != undefined) {
   document.body.style.visibility = "hidden";
