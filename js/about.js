@@ -18,5 +18,15 @@ for (let item of destinationsArr) {
 
   const overlayText = document.createElement("h3");
   overlay.append(overlayText);
+  overlayText.classList.add("overlayText");
   overlayText.innerHTML = `${item.location}, ${item.state}`;
 }
+
+document.body.querySelectorAll('.imgContainer').forEach((n, index) =>
+  n.addEventListener("dblclick", () => {
+    location.href = './index.html';
+    localStorage.setItem("index", index);
+  })
+);
+
+console.log(document.body.querySelectorAll('.imgContainer'))
