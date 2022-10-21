@@ -77,28 +77,53 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15vh;
   text-align: center;
-  background-color: rgba(41, 39, 38, 0.6);
+  /* background-color: rgba(41, 39, 38, 0.6); */
   padding: 20px;
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 600px;
   min-width: 200px;
 }
 
+.location {
+  font-size: 2.5rem;
+}
+
 .generateDestination {
-  width: 100px;
-  height: 40px;
+  width: 150px;
+  height: 150px;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: none;
+  /* opacity: 0; */
+  background-color: #ffffff00;
+  /* background-image: url('../img/mapMarker3.png');
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: multiply; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
 }
 
 .generateDestination:hover {
   cursor: pointer;
+}
+
+.marker {
+  width: 80%;
+  height: 80%;
+  /* border: 2px solid black; */
+  object-fit: cover;
+  object-position: center;
 }
 
 .footer {
@@ -218,8 +243,8 @@ body {
   }
 
   .generateDestination {
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     border-radius: 5px;
     font-size: 0.9rem;
     color: black;
