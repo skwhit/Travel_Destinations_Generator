@@ -10,32 +10,35 @@ let item;
 let index = localStorage.getItem("index");
 let counter = 0;
 
+const generateDestination = document.querySelector(".generateDestination");
+generateDestination.addEventListener("click", getLocation);
+
 if (index != undefined) {
   document.body.style.visibility = "hidden";
-  
-  
   item = locationsArr[index];
   getLocation();
 }
-
-const generateDestination = document.querySelector(".generateDestination");
-generateDestination.addEventListener("click", getLocation);
 
 function getLocation() {
   counter++;
   index = localStorage.getItem("index");
   if (index != undefined) {
     localStorage.removeItem("index");
+    console.log(index);
   } else {
     randomNum = Math.floor(Math.random() * locationsArr.length);
     item = locationsArr[randomNum];
   }
 
   console.log(item);
-
+  if (counter >= 1) {
+    generateDestination.classList.toggle('rotate')
+  }
   //fade  effect initialized imediately
   document.body.classList.toggle("fade");
+  console.lo
 
+  
   //map will change after .5 seconds
   setTimeout(() => {
     map.src = item.map;
@@ -47,6 +50,7 @@ function getLocation() {
     if (counter===1) {
       document.querySelector('.marker').remove();
       generateDestination.innerHTML = "New Destination?";
+      generateDestination.classList.add('generateNoMarker')
     }
     document.body.style.visibility = "visible";
     destinationContainer.style.backgroundImage = `url(${item.image})`;
@@ -56,6 +60,7 @@ function getLocation() {
   //fade class removed after 2 seconds when fade animation is complete
   setTimeout(() => {
     document.body.classList.toggle("fade");
+    generateDestination.classList.toggle('rotate');
   }, 2000);
 }
 
