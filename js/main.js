@@ -32,13 +32,12 @@ function getLocation() {
 
   console.log(item);
   if (counter >= 1) {
-    generateDestination.classList.toggle('rotate')
+    generateDestination.classList.toggle("rotate");
   }
   //fade  effect initialized imediately
   document.body.classList.toggle("fade");
-  console.lo
+  console.lo;
 
-  
   //map will change after .5 seconds
   setTimeout(() => {
     map.src = item.map;
@@ -46,11 +45,11 @@ function getLocation() {
 
   //image will be updated after 1 second
   setTimeout(() => {
-
-    if (counter===1) {
-      document.querySelector('.marker').remove();
+    if (counter === 1) {
+      document.querySelector(".marker").remove();
       generateDestination.innerHTML = "New Destination?";
-      generateDestination.classList.add('generateNoMarker')
+      generateDestination.classList.add("generateNoMarker");
+      generateDestination.classList.remove('wiggle')
     }
     document.body.style.visibility = "visible";
     destinationContainer.style.backgroundImage = `url(${item.image})`;
@@ -60,7 +59,7 @@ function getLocation() {
   //fade class removed after 2 seconds when fade animation is complete
   setTimeout(() => {
     document.body.classList.toggle("fade");
-    generateDestination.classList.toggle('rotate');
+    generateDestination.classList.toggle("rotate");
   }, 2000);
 }
 
