@@ -22,11 +22,11 @@ for (let item of destinationsArr) {
   overlayText.innerHTML = `${item.location}, ${item.state}`;
 }
 
-document.body.querySelectorAll('.imgContainer').forEach((n, index) =>
+document.body.querySelectorAll(".imgContainer").forEach((n, index) =>
   n.addEventListener("dblclick", () => {
-    location.href = './index.html';
+    location.href = "./index.html";
     localStorage.setItem("index", index);
   })
 );
 
-console.log(document.body.querySelectorAll('.imgContainer'))
+console.log(document.body.querySelectorAll(".imgContainer"));
