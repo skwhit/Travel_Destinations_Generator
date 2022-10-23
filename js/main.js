@@ -5,13 +5,15 @@ const locationsArr = destinationsArr;
 const location = document.querySelector(".location");
 const destinationContainer = document.querySelector(".destinationContainer");
 const map = document.querySelector(".map");
+const flight = document.querySelector(".getFlight");
+const hotel = document.querySelector(".getHotel")
 let randomNum;
 let item;
 let index = localStorage.getItem("index");
 let counter = 0;
 
 const generateDestination = document.querySelector(".generateDestination");
-generateDestination.addEventListener("dblclick", getLocation);
+generateDestination.addEventListener("click", getLocation);
 
 if (index != undefined) {
   document.body.style.visibility = "hidden";
@@ -31,6 +33,7 @@ function getLocation() {
   }
 
   console.log(item);
+  
   if (counter > 1) {
     generateDestination.classList.toggle("rotate");
   }
@@ -45,6 +48,7 @@ function getLocation() {
 
   //image will be updated after 1 second
   setTimeout(() => {
+      
     if (counter === 1) {
       document.querySelector(".marker").remove();
       generateDestination.innerHTML = "New Destination?";
@@ -54,6 +58,8 @@ function getLocation() {
     document.body.style.visibility = "visible";
     destinationContainer.style.backgroundImage = `url(${item.image})`;
     location.innerHTML = `${item.location}, ${item.state}`;
+    flight.href = `https://www.united.com/en-us/flights-to-${item.flight}`;
+    hotel.href = `https://www.booking.com/${item.type}/us/${item.hotel}.html`;
   }, 1000);
 
   //fade class removed after 2 seconds when fade animation is complete
