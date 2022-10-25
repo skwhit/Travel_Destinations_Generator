@@ -9,6 +9,7 @@
   border: none;
   overflow-x: hidden;
   opacity: 1;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -187,11 +188,6 @@ body {
   object-position: center;
 }
 
-.footer {
-  background-color: black;
-  height: 300px;
-}
-
 .hamburger {
   display: block;
   padding: 0.5rem;
@@ -264,6 +260,108 @@ body {
   left: 0;
 }
 
+.greyGradient {
+  background: linear-gradient(45deg, rgb(58, 57, 57), rgb(170, 168, 168));
+
+}
+
+.travel {
+  /* background: rgb(77, 74, 74); */
+  display: flex;
+  /* border: 2px solid white; */
+  background: linear-gradient(45deg, rgb(58, 57, 57), rgb(170, 168, 168));
+}
+
+.mapContainer {
+  width: 50%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.booking {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+
+.flight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* border: 2px solid white; */
+  /* width: 50%; */
+  color: white;
+  
+  text-align: center;
+}
+
+.getFlight, .getHotel {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-size: clamp(1rem, 1.5vw, 1.7rem);
+}
+
+.getFlight img, .getHotel img {
+  width:80%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  max-height: 100%;
+}
+.hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* width: 50%; */
+  /* border: 2px solid white;; */
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+
+
+}
+
+.footer {
+  /* height: calc(100vh - 600px); */
+  position: absolute;
+  text-align: right;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.copyright {
+  /* border: 2px solid white; */
+  /* padding-right: 10px; */
+  font-size: 1.2rem;
+   /* height: calc(100vh - 600px); */
+   position: absolute;
+   top: 95%;
+   right: 5%;
+   text-align: right;
+   color: white;
+   
+}
+
+@media (max-width: 1000px) {
+  .booking {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 600px) {
   .destinationContainer {
     height: 50vh;
@@ -278,9 +376,24 @@ body {
     justify-content: center;
   }
 
-  .map {
-    height: 25vh;
+  .travel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mapContainer {
+    height: 50vh;
     width: 100vw;
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .booking {
+    width: 100vw;
+    height: 50vh;
   }
 
   .nav-list {
@@ -322,8 +435,7 @@ body {
     overflow: visible;
   }
 
-  footer {
-    height: 25vh;
-    /* border: 2px solid white; */
+  .copyright {
+    font-size: 1rem;
   }
 }
