@@ -315,16 +315,32 @@ body {
   min-height: 20%;
   overflow-y: hidden;
   /* padding: 10px 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
 }
 
-.getFlight img,
-.getHotel img {
-  /* width:80%; */
+.flightTitle, .hotelTitle {
+  overflow-y: hidden;
+}
+
+.bookingImg {
+  max-width: 80%;
+  max-height: 80%;
+  /* border: 2px solid white; */
+  overflow-y: hidden;
+}
+
+.bookingImg img {
+  width: 100%;
   border-radius: 10px;
   object-fit: cover;
   object-position: center;
+  /* height: 100%; */
   max-height: 100%;
-  max-width: 85%;
+  /* max-width: 85%; */
+  overflow-y: hidden;
 }
 .hotel {
   display: flex;
@@ -355,7 +371,7 @@ body {
   font-size: 1.2rem;
   /* height: calc(100vh - 600px); */
   position: absolute;
-  top: 95%;
+  top: 93%;
   right: 5%;
   text-align: right;
   color: white;
