@@ -92,6 +92,7 @@ body {
   border-radius: 10px;
   max-width: 600px;
   min-width: 200px;
+  overflow-y: hidden;
 }
 
 .location {
@@ -186,6 +187,7 @@ body {
   /* border: 2px solid black; */
   object-fit: cover;
   object-position: center;
+  overflow-y: hidden;
 }
 
 .hamburger {
@@ -262,7 +264,6 @@ body {
 
 .greyGradient {
   background: linear-gradient(45deg, rgb(58, 57, 57), rgb(170, 168, 168));
-
 }
 
 .travel {
@@ -288,7 +289,8 @@ body {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-  padding: 15px 0;
+  /* padding: 15px 0; */
+  overflow-y: hidden;
 }
 
 .flight {
@@ -300,37 +302,41 @@ body {
   /* border: 2px solid white; */
   /* width: 50%; */
   color: white;
-  
+
   text-align: center;
 }
 
-.getFlight, .getHotel {
+.getFlight,
+.getHotel {
   color: white;
   font-size: 1.8rem;
   text-decoration: none;
   font-size: clamp(1rem, 1.5vw, 1.7rem);
+  min-height: 20%;
+  overflow-y: hidden;
+  /* padding: 10px 0; */
 }
 
-.getFlight img, .getHotel img {
-  width:80%;
+.getFlight img,
+.getHotel img {
+  /* width:80%; */
   border-radius: 10px;
   object-fit: cover;
   object-position: center;
   max-height: 100%;
+  max-width: 85%;
 }
 .hotel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
   /* width: 50%; */
   /* border: 2px solid white;; */
   color: white;
   font-size: 1.8rem;
   text-align: center;
-
-
 }
 
 .footer {
@@ -347,18 +353,18 @@ body {
   /* border: 2px solid white; */
   /* padding-right: 10px; */
   font-size: 1.2rem;
-   /* height: calc(100vh - 600px); */
-   position: absolute;
-   top: 95%;
-   right: 5%;
-   text-align: right;
-   color: white;
-   
+  /* height: calc(100vh - 600px); */
+  position: absolute;
+  top: 95%;
+  right: 5%;
+  text-align: right;
+  color: white;
 }
 
 @media (max-width: 1000px) {
   .booking {
     flex-direction: column;
+    padding-top: 10px;
   }
 }
 
@@ -368,6 +374,7 @@ body {
     background-position: bottom;
     background-attachment: scroll;
   }
+
   .overlay {
     font-size: 0.7rem;
     max-height: 30vh;
@@ -394,6 +401,13 @@ body {
   .booking {
     width: 100vw;
     height: 50vh;
+    gap: 10px;
+    padding-bottom: 30px;
+  }
+
+  .getHotel,
+  .getFlight {
+    /* padding-bottom: 30px; */
   }
 
   .nav-list {
@@ -427,8 +441,10 @@ body {
   }
 
   .location {
-    font-size: 1.9rem;
-    overflow: visible;
+    font-size: 1.3rem;
+    top: 10%;
+    /* overflow: visible; */
+    max-width: 75%;
   }
 
   .marker {

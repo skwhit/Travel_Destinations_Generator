@@ -6,7 +6,7 @@ const location = document.querySelector(".location");
 const destinationContainer = document.querySelector(".destinationContainer");
 const map = document.querySelector(".map");
 const flight = document.querySelector(".getFlight");
-const hotel = document.querySelector(".getHotel")
+const hotel = document.querySelector(".getHotel");
 let randomNum;
 let item;
 let index = localStorage.getItem("index");
@@ -33,7 +33,7 @@ function getLocation() {
   }
 
   console.log(item);
-  
+
   if (counter > 1) {
     generateDestination.classList.toggle("rotate");
   }
@@ -48,7 +48,6 @@ function getLocation() {
 
   //image will be updated after 1 second
   setTimeout(() => {
-      
     if (counter === 1) {
       document.querySelector(".marker").remove();
       generateDestination.innerHTML = "New Destination?";
