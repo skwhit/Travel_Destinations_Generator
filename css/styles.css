@@ -159,7 +159,7 @@ body {
   justify-content: center;
   align-items: center;
   /* border: 2px solid black; */
-  color: white;
+  color: black;
   /* border: 2px white solid; */
 }
 
@@ -196,6 +196,7 @@ body {
   height: 70px;
   background-color: rgba(41, 39, 38, 0.6);
   border: 1px white solid;
+  color: white;
 }
 
 .generateNoMarker:hover {
