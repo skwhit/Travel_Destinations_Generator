@@ -3,6 +3,8 @@ import { destinationsArr } from "./destinations.js";
 
 const locationsArr = destinationsArr;
 const location = document.querySelector(".location");
+const travelText = document.querySelector(".travelText")
+const travelLink = document.querySelector(".travelLink");
 const destinationContainer = document.querySelector(".destinationContainer");
 const map = document.querySelector(".map");
 const flight = document.querySelector(".getFlight");
@@ -38,6 +40,7 @@ function getLocation() {
 
   if (counter > 1) {
     generateDestination.classList.toggle("rotate");
+    
   }
   //fade  effect initialized imediately
   document.body.classList.toggle("fade");
@@ -54,10 +57,14 @@ function getLocation() {
       generateDestination.innerHTML = "New Destination?";
       generateDestination.classList.add("generateNoMarker");
       generateDestination.classList.remove("wiggle");
+      travelText.classList.remove("hidden");
+      travelLink.innerHTML = 'Click here to plan a trip';
     }
     document.body.style.visibility = "visible";
     destinationContainer.style.backgroundImage = `url(${item.image})`;
     location.innerHTML = `${item.location}, ${item.state}`;
+    
+     
     flight.href = `https://www.united.com/en-us/flights-to-${item.flight}`;
     hotel.href = `https://www.booking.com/${item.type}/us/${item.hotel}.html`;
   }, 1000);
