@@ -31,4 +31,4 @@ document.body.querySelectorAll(".imgContainer").forEach((n, index) =>
 
 // alert("Double click on any of the images to be taken back to the main page.")
 
-console.log(document.body.querySelectorAll(".imgContainer"));
+// console.log(document.body.querySelectorAll(".imgContainer"));

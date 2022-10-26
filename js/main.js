@@ -22,14 +22,16 @@ if (index != undefined) {
 }
 
 function getLocation() {
+  console.clear();
   counter++;
   index = localStorage.getItem("index");
   if (index != undefined) {
     localStorage.removeItem("index");
-    console.log(index);
+    console.log(`Index: ${index}`);
   } else {
     randomNum = Math.floor(Math.random() * locationsArr.length);
     item = locationsArr[randomNum];
+    console.log(`Index: ${randomNum}`);
   }
 
   console.log(item);
@@ -39,7 +41,6 @@ function getLocation() {
   }
   //fade  effect initialized imediately
   document.body.classList.toggle("fade");
-  console.lo;
 
   //map will change after .5 seconds
   setTimeout(() => {
@@ -69,5 +70,3 @@ function getLocation() {
     }
   }, 2000);
 }
-
-// api key for google maps AIzaSyA8KtrifgseiVbD7VJ39xQ3LMezaJJ9sBs
