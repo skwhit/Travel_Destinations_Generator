@@ -321,7 +321,8 @@ body {
   overflow-y: hidden;
 }
 
-.flightTitle, .hotelTitle {
+.flightTitle,
+.hotelTitle {
   overflow-y: hidden;
 }
 

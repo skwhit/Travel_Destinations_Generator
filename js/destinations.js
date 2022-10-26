@@ -308,12 +308,10 @@ export const destinationsArr = [
   nashville,
 ];
 
-console.log(nashville.hyperlinkText);
-
 // for (let item of destinationsArr) {
 //   console.log(`https://www.united.com/en-us/flights-to-${item.flight}`)
 // }
 
-for (let item of destinationsArr) {
-  console.log(`https://www.booking.com/${item.type}/us/${item.hotel}.html`);
-}
+// for (let item of destinationsArr) {
+//   console.log(`https://www.booking.com/${item.type}/us/${item.hotel}.html`);
+// }
