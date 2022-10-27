@@ -1,21 +1,30 @@
-import { hamburger, navMenu } from "./nav.js";
+import { hamburger, navMenu, hideText, hideTextHome } from "./nav.js";
 import { destinationsArr } from "./destinations.js";
 
 const locationsArr = destinationsArr;
 const location = document.querySelector(".location");
 const travelText = document.querySelector(".travelText")
 const travelLink = document.querySelector(".travelLink");
+const hide = document.querySelector(".hideText");
 const destinationContainer = document.querySelector(".destinationContainer");
 const map = document.querySelector(".map");
 const flight = document.querySelector(".getFlight");
 const hotel = document.querySelector(".getHotel");
+
 let randomNum;
 let item;
 let index = localStorage.getItem("index");
 let counter = 0;
+let n = 0;
 
 const generateDestination = document.querySelector(".generateDestination");
 generateDestination.addEventListener("click", getLocation);
+
+hide.addEventListener("click", ()=>{
+  counter===0 ? hideTextHome() : hideText();
+  n % 2===0 ? hide.innerHTML = "Unhide Elements": hide.innerHTML = "Hide Elements";
+  n++;
+});
 
 if (index != undefined) {
   document.body.style.visibility = "hidden";
@@ -40,7 +49,6 @@ function getLocation() {
 
   if (counter > 1) {
     generateDestination.classList.toggle("rotate");
-    
   }
   //fade  effect initialized imediately
   document.body.classList.toggle("fade");

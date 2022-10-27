@@ -24,6 +24,7 @@ const yosemite = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403237.0377976669!2d-119.83129148234035!3d37.853519395838326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096f09df58aecc5%3A0x2d249c2ced8003fe!2sYosemite%20National%20Park!5e0!3m2!1sen!2sus!4v1666042709016!5m2!1sen!2sus",
   "region"
 );
+
 const newYork = new Destination(
   "New York",
   "NY",
@@ -32,6 +33,7 @@ const newYork = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1666042837405!5m2!1sen!2sus",
   "city"
 );
+
 const grandCanyon = new Destination(
   "Grand Canyon National Park",
   "AZ",
@@ -50,6 +52,7 @@ const yellowstone = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727441.4536062161!2d-111.07446693126899!3d44.5854031891837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5351e55555555555%3A0xaca8f930348fe1bb!2sYellowstone%20National%20Park!5e0!3m2!1sen!2sus!4v1666043170875!5m2!1sen!2sus",
   "region"
 );
+
 const maui = new Destination(
   "Maui",
   "HI",
@@ -68,6 +71,7 @@ const glacier = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337326.7144875636!2d-114.12603134769756!3d48.66026266074626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5368901555555555%3A0xaf16bc2215c55dec!2sGlacier%20National%20Park!5e0!3m2!1sen!2sus!4v1666043335976!5m2!1sen!2sus",
   "region"
 );
+
 const zion = new Destination(
   "Zion National Park",
   "UT",
@@ -76,6 +80,7 @@ const zion = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203062.66488636666!2d-113.18331824036805!3d37.322282621843236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80caead08844f8d9%3A0x7c2e3a15aa3656f5!2sZion%20National%20Park!5e0!3m2!1sen!2sus!4v1666043464713!5m2!1sen!2sus",
   "region"
 );
+
 const honolulu = new Destination(
   "Honolulu",
   "HI",
@@ -84,6 +89,7 @@ const honolulu = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118930.09540488938!2d-157.86911306128448!3d21.328179205881316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c00183b8cc3464d%3A0x4b28f55ff3a7976c!2sHonolulu%2C%20HI!5e0!3m2!1sen!2sus!4v1666043508052!5m2!1sen!2sus",
   "city"
 );
+
 const grandTeton = new Destination(
   "Grand Teton National Park",
   "WY",
@@ -92,6 +98,7 @@ const grandTeton = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d368998.74158611987!2d-110.84412580450415!3d43.735426038893685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5352519ec95d1ba9%3A0xa5a0b88ecc91a337!2sGrand%20Teton%20National%20Park!5e0!3m2!1sen!2sus!4v1666043564186!5m2!1sen!2sus",
   "region"
 );
+
 const sanFran = new Destination(
   "San Francisco",
   "CA",
@@ -100,6 +107,7 @@ const sanFran = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.07476442086!2d-122.47261939249664!3d37.757694819086126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1666155603656!5m2!1sen!2sus",
   "city"
 );
+
 const tahoe = new Destination(
   "Lake Tahoe",
   "NV",
@@ -119,6 +127,7 @@ const moab = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24953.88197038036!2d-109.56892812782112!3d38.574430197168425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8747e1e59ab82d8d%3A0xb32b17af1d5c42d!2sMoab%2C%20UT%2084532!5e0!3m2!1sen!2sus!4v1666043714217!5m2!1sen!2sus",
   "city"
 );
+
 const sanDiego = new Destination(
   "San Diego",
   "CA",
@@ -127,6 +136,7 @@ const sanDiego = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429154.758481513!2d-117.389161835228!3d32.82481751515258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1666043855359!5m2!1sen!2sus",
   "city"
 );
+
 const washingtonDC = new Destination(
   "Washington",
   "D.C.",
@@ -135,6 +145,7 @@ const washingtonDC = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99370.14184000282!2d-77.08461571047151!3d38.893867189236545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC!5e0!3m2!1sen!2sus!4v1666043900430!5m2!1sen!2sus",
   "city"
 );
+
 const barHarbor = new Destination(
   "Bar Harbor",
   "ME",
@@ -143,6 +154,7 @@ const barHarbor = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91284.3971421837!2d-68.34033107887866!3d44.35849928828038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4caebe4815802593%3A0x88e91a6528cad91b!2sBar%20Harbor%2C%20ME!5e0!3m2!1sen!2sus!4v1666043933289!5m2!1sen!2sus",
   "city"
 );
+
 barHarbor.flight = "acadia-national-park#BHB";
 
 const newOrleans = new Destination(
@@ -153,6 +165,7 @@ const newOrleans = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221064.11608238588!2d-90.02264733114917!3d30.03321949243913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2sNew%20Orleans%2C%20LA!5e0!3m2!1sen!2sus!4v1666043959997!5m2!1sen!2sus",
   "city"
 );
+
 const chicago = new Destination(
   "Chicago",
   "IL",
@@ -161,6 +174,7 @@ const chicago = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33858260693!2d-87.87204681033981!3d41.83390366656982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1666042608314!5m2!1sen!2sus",
   "city"
 );
+
 const olympic = new Destination(
   "Olympic National Park",
   "WA",
@@ -169,6 +183,7 @@ const olympic = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343145.71103653574!2d-124.21443599637963!3d47.78482448910345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548e8009cf0472d1%3A0x2087abb27d7951!2sOlympic%20National%20Park!5e0!3m2!1sen!2sus!4v1666044030196!5m2!1sen!2sus",
   "region"
 );
+
 const boston = new Destination(
   "Boston",
   "MA",
@@ -177,6 +192,7 @@ const boston = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94410.11617846483!2d-71.04032363003518!3d42.314455579676796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C%20MA!5e0!3m2!1sen!2sus!4v1666044069713!5m2!1sen!2sus",
   "city"
 );
+
 const bigSur = new Destination(
   "Big Sur",
   "CA",
@@ -195,6 +211,7 @@ const aspen = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24735.63640875122!2d-106.83672459999998!3d39.19848145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8740397cf7413c7d%3A0xc12b42dc782cf672!2sAspen%2C%20CO%2081611!5e0!3m2!1sen!2sus!4v1666041890098!5m2!1sen!2sus",
   "city"
 );
+
 const sedona = new Destination(
   "Sedona",
   "AZ",
@@ -204,6 +221,7 @@ const sedona = new Destination(
   "city"
 );
 sedona.flight = "phoenix";
+
 const telluride = new Destination(
   "Telluride",
   "CO",
@@ -213,6 +231,7 @@ const telluride = new Destination(
   "city"
 );
 telluride.flight = "montrose";
+
 const savannah = new Destination(
   "Savannah",
   "GA",
@@ -239,6 +258,7 @@ const seattle = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172138.65427083964!2d-122.4821467437339!3d47.61317464021942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1666044328882!5m2!1sen!2sus",
   "city"
 );
+
 const miami = new Destination(
   "Miami",
   "FL",
@@ -247,6 +267,7 @@ const miami = new Destination(
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.38943828894!2d-80.29949840380873!3d25.782545310804675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1666044352919!5m2!1sen!2sus",
   "city"
 );
+
 const lasVegas = new Destination(
   "Las Vegas",
   "NV",
