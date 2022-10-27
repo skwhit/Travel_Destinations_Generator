@@ -367,7 +367,7 @@ body {
 
   .overlay {
     font-size: 0.7rem;
-    max-height: 30vh;
+    max-height: 20vh;
     gap: 10px;
     justify-content: center;
   }
