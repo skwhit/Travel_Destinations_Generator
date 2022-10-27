@@ -1,3 +1,4 @@
+//constructor for each destination object
 class Destination {
   constructor(location, state, image, imageLink, map, type) {
     this.location = location;
@@ -11,11 +12,13 @@ class Destination {
   }
 }
 
+//converts a string to replace spaces with dashes. Used to manipulate flight and hotel links
 function convertString(str) {
   str = str.toLowerCase().replace(/\s+/g, "-");
   return str;
 }
 
+//Lines 22 through 300. Constructor called to create an object for each destination
 const yosemite = new Destination(
   "Yosemite National Park",
   "CA",
@@ -296,6 +299,7 @@ const nashville = new Destination(
   "city"
 );
 
+//stores each object in an array and exports the array to other js files
 export const destinationsArr = [
   yosemite,
   newYork,
@@ -328,11 +332,3 @@ export const destinationsArr = [
   destin,
   nashville,
 ];
-
-// for (let item of destinationsArr) {
-//   console.log(`https://www.united.com/en-us/flights-to-${item.flight}`)
-// }
-
-// for (let item of destinationsArr) {
-//   console.log(`https://www.booking.com/${item.type}/us/${item.hotel}.html`);
-// }

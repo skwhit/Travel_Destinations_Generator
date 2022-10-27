@@ -14,29 +14,8 @@
 
 body {
   background-color: black;
-  /* font-family: 'Heebo','Trebuchet MS', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; */
   font-family: "Gill Sans";
 }
-
-/* .destinationContainer::before {
-  content: "";
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("../img/travel.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: 0;
-  box-shadow: inset 0px 0px 150px black;
-  transition: opacity 2s;
-  
-} */
 
 .opacity {
   opacity: 1;
@@ -62,17 +41,12 @@ body {
   height: 100vh;
   position: relative;
   background-color: black;
-  /* z-index: 0; */
-
   background-image: url("../img/travel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
   box-shadow: inset 0px 30px 150px black;
-  /* transition: 1s; */
-  /* transition-delay: 1s; */
 }
 
 .overlay {
@@ -87,7 +61,6 @@ body {
   align-items: center;
   gap: 20px;
   text-align: center;
-  /* background-color: rgba(41, 39, 38, 0.6); */
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
@@ -102,19 +75,12 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  /* border: 2px solid white; */
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(41, 39, 38, 0.6); */
-  /* max-width: 600px; */
-  /* color: black;
-  background-color: rgba(242, 238, 236, 0.7);
-  border-radius: 5px; */
-  /* border: 2px solid white; */
   width: 60%;
 }
 
@@ -124,16 +90,11 @@ body {
 
 .travelText {
   font-size: 1.2rem;
-  /* background-color: rgba(41, 39, 38, 0.6); */
   padding: 5px;
   border-radius: 5px;
-  
-  /* border: 1px white solid; */
-
 }
 
 .locationDiv a {
-  /* text-decoration: none; */
   color: white;
   font-weight: bolder;
 }
@@ -148,19 +109,12 @@ body {
   border-radius: 5px;
   font-size: 1.5rem;
   color: none;
-  /* opacity: 0; */
   background-color: #ffffff00;
-  /* background-image: url('../img/mapMarker3.png');
-  background-position: center;
-  background-size: cover;
-  mix-blend-mode: multiply; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid black; */
   color: black;
-  /* border: 2px white solid; */
 }
 
 .generateDestination:hover {
@@ -220,7 +174,6 @@ body {
 .marker {
   width: 80%;
   height: 80%;
-  /* border: 2px solid black; */
   object-fit: cover;
   object-position: center;
   overflow-y: hidden;
@@ -231,7 +184,7 @@ body {
   padding: 0.5rem;
   position: fixed;
   color: white;
-  z-index: 2;
+  z-index: 6;
 }
 
 .bar {
@@ -243,7 +196,6 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
-  z-index: 2;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -260,7 +212,6 @@ body {
   position: fixed;
   left: -100%;
   top: 0;
-  /* height: 120px; */
   flex-direction: column;
   gap: 50px;
   margin: 0;
@@ -272,12 +223,11 @@ body {
   border-radius: 0 0 5px 0;
   max-width: 300px;
   min-width: 130px;
+  background-color: rgb(24, 24, 24);
 }
 
 .nav-list li {
   width: 100%;
-  /* height: calc(100% / 3); */
-  /* margin: 20px 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,9 +253,7 @@ body {
 }
 
 .travel {
-  /* background: rgb(77, 74, 74); */
   display: flex;
-  /* border: 2px solid white; */
   background: linear-gradient(45deg, rgb(58, 57, 57), rgb(170, 168, 168));
 }
 
@@ -325,7 +273,6 @@ body {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-  /* padding: 15px 0; */
   overflow-y: hidden;
 }
 
@@ -335,8 +282,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  /* border: 2px solid white; */
-  /* width: 50%; */
   color: white;
 
   text-align: center;
@@ -350,7 +295,6 @@ body {
   font-size: clamp(1rem, 1.5vw, 1.7rem);
   min-height: 20%;
   overflow-y: hidden;
-  /* padding: 10px 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,7 +309,6 @@ body {
 .bookingImg {
   max-width: 80%;
   max-height: 80%;
-  /* border: 2px solid white; */
   overflow-y: hidden;
 }
 
@@ -374,9 +317,7 @@ body {
   border-radius: 10px;
   object-fit: cover;
   object-position: center;
-  /* height: 100%; */
   max-height: 100%;
-  /* max-width: 85%; */
   overflow-y: hidden;
 }
 .hotel {
@@ -384,16 +325,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 20px; */
-  /* width: 50%; */
-  /* border: 2px solid white;; */
   color: white;
   font-size: 1.8rem;
   text-align: center;
 }
 
 .footer {
-  /* height: calc(100vh - 600px); */
   position: absolute;
   text-align: right;
   color: white;
@@ -403,10 +340,7 @@ body {
 }
 
 .copyright {
-  /* border: 2px solid white; */
-  /* padding-right: 10px; */
   font-size: 1.2rem;
-  /* height: calc(100vh - 600px); */
   position: absolute;
   top: 93%;
   right: 5%;
@@ -432,7 +366,6 @@ body {
     font-size: 0.7rem;
     max-height: 30vh;
     gap: 10px;
-    /* border: 2px solid white; */
     justify-content: center;
   }
 
@@ -458,24 +391,10 @@ body {
     padding-bottom: 30px;
   }
 
-  .getHotel,
-  .getFlight {
-    /* padding-bottom: 30px; */
-  }
-
   .nav-list {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    border: 2px solid white;
-    width: 100%;
-    border-radius: 0;
-    padding: 0 30px;
-    gap: 20px; */
     padding-top: 30px;
     z-index: 5;
-    background-color: rgb(24,24,24);
+    background-color: rgb(24, 24, 24);
   }
 
   .nav-list li {
@@ -504,16 +423,19 @@ body {
   .location {
     font-size: 1.3rem;
     top: 10%;
-    /* overflow: visible; */
     max-width: 75%;
   }
 
   .travelText {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .marker {
     overflow: visible;
+  }
+
+  .bookingImg {
+    max-width: 60%;
   }
 
   .copyright {
